@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url('download.jpeg') no-repeat center center/cover; /* Add your image here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per line */
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(239, 247, 0, 0.9);  /* Light background with transparency */
+  border-radius: 15px;
+  border: 2px solid #007bff;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style-type: none;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fe0000;   /* Color change on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
